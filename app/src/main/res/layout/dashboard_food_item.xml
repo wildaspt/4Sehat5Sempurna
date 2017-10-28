@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/food_pic"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/food1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama"
+            android:layout_toRightOf="@+id/food_pic"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:text="Nasi Goreng"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/berat"
+            android:layout_toRightOf="@+id/food_pic"
+            android:layout_below="@+id/nama"
+            android:text="Berat : 870 gr"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/suhu"
+            android:layout_toRightOf="@+id/food_pic"
+            android:layout_below="@+id/berat"
+            android:text="Suhu  : 50 c"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/last_eaten"
+            android:layout_toRightOf="@+id/food_pic"
+            android:layout_below="@+id/suhu"
+            android:text="Last Eaten : 13.00"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
